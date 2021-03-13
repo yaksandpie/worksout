@@ -1,0 +1,14 @@
+.item {
+  padding: 16px;
+  border-bottom: 1px solid var(--c-border);
+  font-size: 24px;
+}
+
+.item:first-child {
+  border-top: 1px solid var(--c-border);
+}
+
+.itemName {
+  font-size: 18px;
+  margin-right: 16px;
+}

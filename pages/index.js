@@ -1,23 +1,34 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from 'next/head';
+import Link from 'next/link';
+
+import styles from './Home.module.css';
+
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Worksouts - Home</title>
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+      <main className={styles.container}>
+        <Link href='/programs'>
+          <a className={styles.tile}>Programs</a>
+        </Link>
 
-      <Footer />
-    </div>
-  )
+        <Link href='/history'>
+          <a className={styles.tile}>History</a>
+        </Link>
+
+        <Link href='/build'>
+          <a className={styles.tile}>Build</a>
+        </Link>
+
+        <Link href='/import'>
+          <a className={styles.tile}>Import</a>
+        </Link>
+      </main>
+    </>
+  );
 }

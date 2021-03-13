@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.logoArea h1 {
+  font-size: 18px;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: var(--c-grey);
+}
+
+.title {
+  margin-top: 40px;
+  text-align: center;
+}
